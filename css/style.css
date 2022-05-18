@@ -1,0 +1,395 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+input, button, textarea, select {
+  font: inherit;
+  outline: none;
+  border: none;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+
+body {
+  background: linear-gradient(191.96deg, #252743 5.82%, #282b47 91.26%);
+  background-size: cover;
+  background-attachment: fixed;
+  width: 100%;
+  height: 100vh;
+  user-select: none;
+  font-size: 16px;
+}
+
+@media screen and (max-width: 1023px) {
+  body {
+    background: #171930;
+    width: 100vw;
+  }
+
+  .navbar {
+    position: fixed;
+    width: 100%;
+    left: 0;
+    border-radius: 0;
+    bottom: 0px;
+    background: #0D0F22;
+    padding-bottom: 2vh;
+  }
+  .navbar .navbar_item {
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    margin-top: 8px;
+  }
+  .navbar .navbar_item .item {
+    font-family: "Inter", sans-serif;
+    color: rgba(255, 255, 255, 0.403);
+    display: block;
+    text-align: center;
+    font-size: 3vw;
+    text-decoration: none;
+  }
+  .navbar .navbar_item .icons {
+    font-size: 6vw;
+  }
+  .navbar .item:hover {
+    color: #fff;
+  }
+}
+.Desktop {
+  height: 100vh;
+  overflow: hidden;
+}
+.Desktop .header {
+  margin-top: 2vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.Desktop .header .title {
+  display: flex;
+  justify-content: center;
+  color: #fff;
+  font-family: "Inter", sans-serif;
+  font-size: 6vw;
+  font-weight: 700;
+}
+.Desktop .header .title .thunder {
+  width: 7vw;
+}
+.Desktop .content {
+  text-align: center;
+  font-family: "Inter", sans-serif;
+  font-size: 2vw;
+  font-weight: 700;
+  color: #8f689f;
+}
+.Desktop .preview {
+  margin-top: 3vw;
+  display: grid;
+  grid-template-columns: 15% 15% 15% 15% 15%;
+  justify-content: center;
+  gap: 2vw;
+}
+.Desktop .preview .picture {
+  width: 30em;
+  border-radius: 1vw;
+}
+
+.mobile {
+  display: none;
+}
+
+@media screen and (max-width: 1023px) {
+  .Desktop {
+    display: none;
+  }
+
+  .mobile {
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+    margin-top: 5vw;
+    margin-left: 5vw;
+    padding-bottom: 20vh;
+  }
+  .mobile .Login .title {
+    font-family: "Inter", sans-serif;
+    color: white;
+    font-size: 10vw;
+    font-weight: 700;
+  }
+  .mobile .Login .contant {
+    margin-top: 2vw;
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-size: 3.7vw;
+    margin-right: 5px;
+    color: rgba(215, 215, 215, 0.493);
+  }
+  .mobile .Login .body {
+    margin-top: 6vw;
+    height: fit-content;
+  }
+  .mobile .Login .body .text {
+    margin: 3vw 0vw 1vw 5vw;
+    font-family: "Inter", sans-serif;
+    color: rgba(215, 215, 215, 0.493);
+    font-weight: 400;
+    font-size: 4vw;
+  }
+  .mobile .Login .body input {
+    background: linear-gradient(90deg, rgba(36, 37, 71, 0.447059) 2.17%, #242547 98.96%);
+    height: 15vw;
+    width: 87vw;
+    border-radius: 8px;
+    padding: 15px 30px;
+    color: white;
+    font-family: "Inter", sans-serif;
+  }
+  .mobile .Login .body .line_or {
+    margin-top: 25px;
+    margin-bottom: 25px;
+    margin-left: -10px;
+    display: grid;
+    grid-template-columns: 47% 6% 47%;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  .mobile .Login .body .line_or .line {
+    width: 37vw;
+    height: 0.2px;
+    background-color: rgba(255, 255, 255, 0.286);
+    margin: 0 auto;
+  }
+  .mobile .Login .body .line_or .or {
+    font-family: "Inter", sans-serif;
+    color: white;
+    font-size: 3.5vw;
+    margin: 0 auto;
+  }
+  .mobile .Login .body .footer {
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 15px;
+  }
+  .mobile .Login .body .footer .border {
+    padding: 5px 15px;
+    width: 25vw;
+    border-radius: 1vw;
+  }
+  .mobile .Login .body .footer .apple {
+    background-color: rgba(255, 255, 255, 0.233);
+  }
+  .mobile .Login .body .footer .facebook {
+    background: #3B5998;
+  }
+  .mobile .Login .body .footer .twitter {
+    background: #4385F4;
+  }
+  .mobile .Login .end {
+    margin: 10px auto;
+  }
+  .mobile .Login .end .login {
+    font-family: "Inter", sans-serif;
+    color: white;
+    background: linear-gradient(130.97deg, #266ED7 6.68%, #4D8AEB 99.25%);
+    height: 15vw;
+    width: 87vw;
+    border-radius: 8px;
+    padding: 15px 30px;
+    font-size: 3.5vw;
+  }
+  .mobile .img {
+    width: 9vw;
+    margin: 0 auto;
+  }
+  .mobile .forgot {
+    font-family: "Inter", sans-serif;
+    color: rgba(255, 255, 255, 0.34);
+    font-size: 3.8vw;
+    text-align: center;
+    text-decoration: none;
+    width: 95%;
+  }
+  .mobile .forgot:hover {
+    text-decoration: underline;
+  }
+  .mobile .text_end {
+    text-align: center;
+    font-family: "Inter", sans-serif;
+    color: rgba(255, 255, 255, 0.221);
+    font-size: 3.5vw;
+    margin-bottom: 10px;
+    font-weight: 200;
+  }
+  .mobile .Page {
+    font-family: "Inter", sans-serif;
+    color: white;
+  }
+  .mobile .Page .title {
+    display: flex;
+    align-items: center;
+  }
+  .mobile .Page .title .text {
+    font-weight: 700;
+    color: white;
+    font-size: 7vw;
+    margin-right: auto;
+    text-decoration: none;
+  }
+  .mobile .Page .title img {
+    width: 5vw;
+    height: 5vw;
+  }
+  .mobile .Page .title .card {
+    margin-right: 3vw;
+  }
+  .mobile .Page .title .plus {
+    margin-right: 7vw;
+  }
+  .mobile .Page .button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  .mobile .Page .button .time {
+    margin: 20px 2.5vw;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    font-size: 3vw;
+    padding: 1vw 7vw;
+    border-radius: 2vw;
+  }
+  .mobile .Page .button .time:hover {
+    border: 1px solid #266ED7;
+    background: #266ED7;
+  }
+  .mobile .Page .round {
+    width: 60vw;
+    margin: 0px auto;
+  }
+  .mobile .Page .more {
+    display: flex;
+    align-items: center;
+    font-size: 3.5vw;
+  }
+  .mobile .Page .more icon {
+    width: 5vw;
+    height: 5vw;
+    border-radius: 50%;
+    margin-right: 2vw;
+  }
+  .mobile .Page .more .color1 {
+    background: linear-gradient(180deg, #654EA3 0%, #EAAFC8 100%);
+    margin-left: 18vw;
+  }
+  .mobile .Page .more .color2 {
+    background: linear-gradient(180deg, #313346 0%, #54566E 100%);
+  }
+  .mobile .Page .more .ametlorem {
+    margin-right: 5vw;
+  }
+  .mobile .Page .today {
+    font-size: 3.8vw;
+    margin-top: 10px;
+  }
+  .mobile .Page .footer {
+    background: #27294b;
+    width: 95%;
+    border-radius: 2vw;
+    padding-bottom: 20px;
+    margin-top: 20px;
+  }
+  .mobile .Page .footer .shop {
+    display: flex;
+    align-items: center;
+    padding-top: 10px;
+  }
+  .mobile .Page .footer .shop .left {
+    display: flex;
+    align-items: center;
+    margin-right: auto;
+    margin-left: 4vw;
+  }
+  .mobile .Page .footer .shop .left img {
+    border-radius: 50%;
+    margin: 2vw;
+  }
+  .mobile .Page .footer .shop .left .nike {
+    width: 10.5vw;
+    background: linear-gradient(180deg, #654EA3 0%, #EAAFC8 100%);
+    padding: 1.2vw;
+  }
+  .mobile .Page .footer .shop .left .apple {
+    width: 10.5vw;
+    background: white;
+    padding: 2vw;
+  }
+  .mobile .Page .footer .shop .left .person {
+    width: 10.5vw;
+  }
+  .mobile .Page .footer .shop .left .content .store {
+    font-size: 4vw;
+  }
+  .mobile .Page .footer .shop .left .content .master_card {
+    margin-top: -5px;
+    font-size: 2.8vw;
+    color: rgba(255, 255, 255, 0.505);
+    margin-right: auto;
+  }
+  .mobile .Page .footer .shop .right {
+    font-size: 2.8vw;
+  }
+  .mobile .Page .footer .shop .arrow {
+    margin-right: 5vw;
+    margin-left: 2vw;
+    width: 6vw;
+  }
+  .mobile .Page .check {
+    margin-top: 15px;
+    background: #1E203B;
+    height: 10vw;
+    width: 95%;
+    display: inline-flex;
+    align-items: center;
+    border-radius: 1vw;
+    font-size: 3.5vw;
+  }
+  .mobile .Page .check .icon {
+    color: #F18C27;
+    margin-left: 5vw;
+  }
+  .mobile .Page .check .icon_2 {
+    color: #4886E8;
+    margin-left: 5vw;
+  }
+  .mobile .Page .check p {
+    margin-left: 15px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
